@@ -70,9 +70,7 @@ function Education() {
                       <div>
                         <p className="text-base sm:text-xl mb-2 font-medium">
                           {education.title}&nbsp;
-                          <span className="text-sm capitalize">
-                            &nbsp;in&nbsp;
-                          </span>
+                          <span className="text-sm capitalize">in&nbsp;</span>
                           {education.field}
                         </p>
                         <p className="text-sm sm:text-base">
