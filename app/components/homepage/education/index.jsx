@@ -1,5 +1,4 @@
 // @flow strict
-"use client";
 
 import { educations } from "@/utils/data/educations";
 import Image from "next/image";
