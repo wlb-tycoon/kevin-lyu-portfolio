@@ -10,11 +10,11 @@ export default async function Home() {
   return (
     <div>
       <HeroSection />
-      <AboutSection />
+      {/* <AboutSection />
       <Experience />
       <Skills />
       <Projects />
-      <Education />
+      <Education /> */}
       {/* <ContactSection /> */}
     </div>
   );
