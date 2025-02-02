@@ -50,7 +50,7 @@ function Education() {
                 //   key={education.id}
                 //   identifier={`education-${education.id}`}
                 // >
-                <div className="p-3 relative text-white">
+                <div className="p-3 relative text-white" key={education.id}>
                   <Image
                     src="/blur-23.svg"
                     alt="Hero"
