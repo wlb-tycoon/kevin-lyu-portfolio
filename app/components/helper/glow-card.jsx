@@ -56,10 +56,10 @@ const GlowCard = ({ children, identifier }) => {
     document.body.addEventListener("pointermove", UPDATE);
 
     const RESTYLE = () => {
-      CONTAINER.style.setProperty("--gap", CONFIG.gap);
-      CONTAINER.style.setProperty("--blur", CONFIG.blur);
-      CONTAINER.style.setProperty("--spread", CONFIG.spread);
-      CONTAINER.style.setProperty(
+      CONTAINER?.style.setProperty("--gap", CONFIG.gap);
+      CONTAINER?.style.setProperty("--blur", CONFIG.blur);
+      CONTAINER?.style.setProperty("--spread", CONFIG.spread);
+      CONTAINER?.style.setProperty(
         "--direction",
         CONFIG.vertical ? "column" : "row"
       );
