@@ -8,7 +8,8 @@ const GlowCard = ({ children, identifier }) => {
   useEffect(() => {
     setIsMounted(true);
 
-    if (typeof window === "undefined") return;
+    // Ensure we're in the browser and component is mounted
+    if (!isMounted || typeof window === "undefined") return;
 
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
