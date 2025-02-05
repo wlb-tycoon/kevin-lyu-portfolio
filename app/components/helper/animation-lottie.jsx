@@ -7,10 +7,12 @@ const AnimationLottie = ({ animationPath, width }) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
+    if (typeof window !== "undefined") {
+      setIsMounted(true);
+    }
   }, []);
 
-  if (!isMounted) return null;
+  if (isMounted === false) return null;
 
   const defaultOptions = {
     loop: true,
