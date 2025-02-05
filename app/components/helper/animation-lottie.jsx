@@ -1,7 +1,10 @@
 "use client";
 
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
+
+// Dynamically import lottie-react so that it is only used on the client side
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const AnimationLottie = ({ animationPath, width }) => {
   const [isClient, setIsClient] = useState(false);
