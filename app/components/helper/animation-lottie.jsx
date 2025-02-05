@@ -1,18 +1,19 @@
 "use client";
 
 import Lottie from "lottie-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const AnimationLottie = ({ animationPath, width }) => {
-  const [isMounted, setIsMounted] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+  const lottieRef = useRef(null);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setIsMounted(true);
-    }
+    setIsClient(true);
   }, []);
 
-  if (isMounted === false) return null;
+  if (!isClient) {
+    return null;
+  }
 
   const defaultOptions = {
     loop: true,
@@ -23,7 +24,7 @@ const AnimationLottie = ({ animationPath, width }) => {
     },
   };
 
-  return <Lottie {...defaultOptions} />;
+  return <Lottie {...defaultOptions} ref={lottieRef} />;
 };
 
 export default AnimationLottie;
