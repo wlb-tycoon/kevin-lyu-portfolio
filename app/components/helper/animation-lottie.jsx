@@ -12,7 +12,8 @@ const AnimationLottie = ({ animationPath, width }) => {
   }, []);
 
   if (!isClient) {
-    return null;
+    // Return a placeholder with similar dimensions during SSR
+    return <div style={{ width: width || "95%", height: "300px" }} />;
   }
 
   const defaultOptions = {
@@ -20,7 +21,7 @@ const AnimationLottie = ({ animationPath, width }) => {
     autoplay: true,
     animationData: animationPath,
     style: {
-      width: "95%",
+      width: width || "95%",
     },
   };
 
