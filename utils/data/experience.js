@@ -1,26 +1,32 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer',
+    title: 'Lead Software Engineer',
     company: "Maxim Inc. (MAXIM magazine)",
-    duration: "(Jul 2023 - Present)"
+    duration: "(Jun 2024 - Present)"
   },
   {
     id: 2,
-    title: "Lead Software Engineer",
-    company: "Visme",
-    duration: "(Jan 2023 - Jun 2023)"
+    title: "Senior Software Engineer",
+    company: "Webflow",
+    duration: "(Apr 2023 - Apr 2023)"
   },
   {
     id: 3,
     title: "Software Engineer",
-    company: "Twitter",
-    duration: "(Feb 2019 - Nov 2022)"
+    company: "Quora",
+    duration: "(Mar 2021 - Mar 2023)"
   },
   {
     id: 4,
-    title: "Web Developer",
-    company: "DGN Technologies",
-    duration: "(May, 2014 - Dec, 2018)"
+    title: "Software Engineer",
+    company: "Discover Financial Services",
+    duration: "(Oct 2014 - Jan 2021)"
+  },
+  {
+    id: 5,
+    title: "Software Engineer",
+    company: "Amazon",
+    duration: "(May 2017 - Jul 2019)"
   }
 ]

@@ -1,11 +1,11 @@
 export const contactsData = {
-    email: 'jefflingad68@gmail.com',
-    phone: '+63 963 424 9175',
-    address: 'Angeles City, Philippines',
-    github: 'https://github.com/wlb-tycoon',
-    facebook: 'https://www.facebook.com/jeff.lingad/',
-    linkedIn: 'https://www.linkedin.com/in/jeff-lingad/',
-    twitter: 'https://twitter.com/jeff_lingad',
+    email: 'kevinlyuanqing@gmail.com',
+    phone: '+1 (630) 509-8384',
+    address: 'Wheeling, IL',
+    github: 'https://github.com/miniblaster',
+    facebook: 'https://www.facebook.com/kevin.lyu/',
+    linkedIn: 'https://www.linkedin.com/in/kevin-lyu/',
+    twitter: 'https://twitter.com/kevin_lyu',
     stackOverflow: 'https://stackoverflow.com/users/23916061/lovin-hood',
-    devUsername: "wlb-tycoon"
+    devUsername: "miniblaster"
 }
